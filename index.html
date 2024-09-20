@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Forum Posts</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-800">ReTro</h1>
+      <div>
+        <button class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-16 text-center">
+    <h1 class="text-4xl font-bold">Welcome to the <span class="text-purple-300">ReTro</span> Forum</h1>
+    <p class="mt-4 text-lg">Share your favorite opinion and win and WP Forum coffee mug!</p>
+    <div class="mt-6">
+      <input
+        type="text"
+        placeholder="Search here anything"
+        class="input input-bordered w-full max-w-xs"
+      />
+      <button class="btn btn-primary">Search</button>
+    </div>
+  </section>
+<!-- Let's Discuss Section -->
+<section class=" py-12 bg-orange-200">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Let's Discuss</h2>
+      <p class="text-2xl text-center mb-8 text-zinc-500"> Yes, you can run unit tests and view the results directly within the app. The 
+        integrated testing features allow for a streamlined .</p>
+      <div class="grid grid-cols-2">
+     <div id="posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 space-y-4"> 
+        <!-- Cards will be inserted here -->
+      </div>
+      <div>
+        <div class="ml-24">
+          <h2 class="text-2xl font-bold">
+              Selected Titles 
+              <span id="title-count" class="ml-64"> Mark as read 0</span>
+          </h2>
+      </div>
+        <ul id="title-list" class="list-disc pl-5 text-2xl ml-24"></ul>
+       
+      </div>
+      
+    </div>
+  </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-lg font-bold">Join Our Forum</h3>
+      <p class="mt-2">Share your favorite opinion and win a WP forum coffee mug!</p>
+      <button class="btn btn-secondary mt-4">Register Now</button>
+    </div>
+  </footer>
+    <!-- Script to Fetch and Render Data -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
